@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Component } from "react";
+import {Howl} from "howler"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const audioClips=[
+  {'sound':'https://drive.google.com/uc?export=download&id=1rmwX9MXU4xZbQx4d45XH37QS3wdQPehF','label':'Raftara'},
+  {'sound':"https://drive.google.com/uc?export=download&id=1Nst9xNcYXQ3qOr7UPhCKW4JbEvmxXt4z",'label':'Bad Wolves'}
+]
+class App extends Component {
+  soundPlay =(src)=>{
+    const sound=new Howl({
+      src,
+      html5:true
+    })
+    sound.play()
+  }
+  RenderButtonSound=()=>{
+    return audioClips.map((soundObj,index)=>{
+      return(
+        <button key={index} onClick={(()=>{this.soundPlay(soundObj.sound)})}>
+          {soundObj.label}
+        </button>
+      )
+    })
+  }
+  render() {
+    return (
+      <div className="App">
+        {this.RenderButtonSound()}
+      </div>
+    );
+  }
 }
 
 export default App;
