@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/howler-player/static/css/main.a617e044.chunk.css",
+    "main.js": "/howler-player/static/js/main.3c55ac37.chunk.js",
+    "main.js.map": "/howler-player/static/js/main.3c55ac37.chunk.js.map",
+    "runtime-main.js": "/howler-player/static/js/runtime-main.740c0481.js",
+    "runtime-main.js.map": "/howler-player/static/js/runtime-main.740c0481.js.map",
+    "static/js/2.c70787c3.chunk.js": "/howler-player/static/js/2.c70787c3.chunk.js",
+    "static/js/2.c70787c3.chunk.js.map": "/howler-player/static/js/2.c70787c3.chunk.js.map",
+    "static/js/3.4574c238.chunk.js": "/howler-player/static/js/3.4574c238.chunk.js",
+    "static/js/3.4574c238.chunk.js.map": "/howler-player/static/js/3.4574c238.chunk.js.map",
+    "index.html": "/howler-player/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/howler-player/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.c70787c3.chunk.js.LICENSE.txt": "/howler-player/static/js/2.c70787c3.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/howler-player/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.740c0481.js",
+    "static/js/2.c70787c3.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.3c55ac37.chunk.js"
+  ]
+}
